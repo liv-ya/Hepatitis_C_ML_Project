@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCV Detection</title>
+    <link href="static/css/styleinput.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Your Info</h1><br>
+        <form id="hcv-form" method="POST" action="result">
+            <!-- First Row (Age and Gender) -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="WBC">WBC</label>
+                    <input type="number" step="any" id="wbc" name="wbc" required>
+                </div>
+                <div class="form-group">
+                    <label for="RBC">RBC</label>
+                    <input type="number" step="any" id="rbc" name="rbc" required>
+                </div>
+                
+            </div>
+            <!-- Second Row (Query on Hyperthyroid and TSH) -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="PLAT">PLAT</label>
+                    <input type="number" step="any" id="plat" name="plat" required>
+                </div>
+                <div class="form-group">
+                    <label for="ALT 1">ALT 1</label>
+                    <input type="number" step="any" id="alt1" name="alt1" required>
+                </div>
+            </div>
+            <!-- Third Row (T3 and TT4) -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="ALT 4">ALT 4</label>
+                    <input type="number" step="any" id="alt4" name="alt4" required>
+                </div>
+                <div class="form-group">
+                    <label for="RNA EF">ALT 12</label>
+                    <input type="number" step="any" id="alt12" name="alt12" required>
+                </div>
+                <div class="form-group">
+                    <label for="ALT 48">ALT 48</label>
+                    <input type="number" step="any" id="alt48" name="alt48" required>
+                </div>
+            </div>
+            <!-- Fourth Row (T4U and FTI) -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="RNA BASE">RNA Base</label>
+                    <input type="number" step="any" id="rnabase" name="rnabase" required>
+                </div>
+                <div class="form-group">
+                    <label for="RNA 4">RNA 4</label>
+                    <input type="number" step="any" id="rna4" name="rna4" required>
+                </div>
+            </div>
+            <!-- Fifth Row (T4U and FTI) -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="RNA EOT">RNA EOT</label>
+                    <input type="number" step="any" id="rnaeot" name="rnaeot" required>
+                </div>
+            </div>
+
+            <!-- Button Group -->
+            <div class="button-group">
+                <button type="submit">Detect Hepatitis C Condition</button>
+                <button type="button" onclick="window.location.href='/'">Home</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
